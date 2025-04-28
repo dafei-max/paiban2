@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily life 复刻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center-wrap">
+        <div class="preview-area" id="preview">
+            <img src="./pic/img1.jpg" class="bg" alt="bg">
+            <img src="./pic/img1.jpg" class="img1" alt="img1">
+            <img src="./pic/img2.jpg" class="img2" alt="img2">
+            <div class="text1" id="text1"></div>
+            <div class="text2" id="text2"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <label>上方文本：</label>
+        <textarea id="input1"></textarea>
+        <label>下方文本：</label>
+        <textarea id="input2"></textarea>
+        <div class="param-row">
+            <label>动画比例（有动画的字符百分比）
+                <span class="param-value" id="ratio-value">25%</span>
+            </label>
+            <input type="range" id="ratio" min="0" max="100" value="25">
+        </div>
+        <div class="param-row">
+            <label>漂浮最大距离(px)
+                <span class="param-value" id="dist-value">60</span>
+            </label>
+            <input type="range" id="dist" min="10" max="100" value="60">
+        </div>
+        <div class="param-row">
+            <label>动画持续时间(ms)
+                <span class="param-value" id="dur-value">1200</span>
+            </label>
+            <input type="range" id="dur" min="300" max="3000" value="1200" step="50">
+        </div>
+        <button id="playBtn" style="margin-top:24px;padding:8px 24px;font-size:1em;">播放动画</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
